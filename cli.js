@@ -46,7 +46,7 @@ if (args.e) {
 //Timezone
 const timezone = moment.tz.guess();
 if (args.t) {
-  timezone = args.t;
+  timezone = args["t"];
 }
 
 const url =
