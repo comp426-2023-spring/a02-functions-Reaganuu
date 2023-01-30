@@ -45,9 +45,6 @@ if (args.e) {
 
 //Timezone
 const timezone = moment.tz.guess();
-if (args.t) {
-  timezone = args["t"];
-}
 
 const url =
   "https://api.open-meteo.com/v1/forecast?latitude=" +
