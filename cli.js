@@ -28,6 +28,9 @@ if (args.n) {
   latitude = args.n;
 } else if (args.s) {
   latitude = -args.s;
+} else {
+  console.log("Latitude must be in range");
+  process.exit(0);
 }
 
 //Longitude
@@ -35,6 +38,9 @@ if (args.e) {
   longitude = args.e;
 } else if (args.w) {
   longitude = -args.w;
+} else {
+  console.log("longitude must be in range");
+  process.exit(0);
 }
 
 //Timezone
